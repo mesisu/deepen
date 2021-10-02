@@ -75,6 +75,36 @@ body {
   background-color: #f8fafc;
 }
 
+.example1 {
+  position: relative;
+  }
+
+.example1 a {/*aタグを画像の真ん中に*/
+  position: absolute;
+  top: 5%;
+  left: 225%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 30px;/*文字サイズ*/
+  border: solid white 2px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: white;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+.example1 a:hover{/*カーソルを当てたとき*/
+  background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+  }
+
+.example1 img {
+  width: auto;
+  }
+
+
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -210,7 +240,7 @@ figure {
 }
 
 img {
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   border-style: none;
 }
 
@@ -243,6 +273,7 @@ label {
 
 button {
   border-radius: 0;
+  padding: 100px 300px;
 }
 
 button:focus:not(:focus-visible) {
@@ -384,7 +415,7 @@ h6,
 .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 2.2;
 }
 
 h1,
@@ -624,6 +655,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  flex-direction: row;
 }
 
 .no-gutters {
@@ -1222,6 +1254,7 @@ pre code {
   .col-md-10 {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+  
   }
 
   .col-md-11 {
@@ -4976,10 +5009,9 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .card > hr {
@@ -5011,8 +5043,9 @@ input[type=button].btn-block {
 
 .card-body {
   flex: 1 1 auto;
+  border-radius: 30px;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 2.25rem;
 }
 
 .card-title {
@@ -5037,10 +5070,10 @@ input[type=button].btn-block {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  text-align:center;
+  padding: 1.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  
 }
 
 .card-header:first-child {
@@ -5251,6 +5284,8 @@ input[type=button].btn-block {
   padding-left: 0;
   list-style: none;
   border-radius: 0.25rem;
+
+  
 }
 
 .page-link {
@@ -7091,9 +7126,9 @@ button.bg-dark:focus {
   background-color: transparent !important;
 }
 
-.border {
+/*.border {
   border: 1px solid #dee2e6 !important;
-}
+}*/
 
 .border-top {
   border-top: 1px solid #dee2e6 !important;
@@ -10942,5 +10977,8 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+
+
 }
+
 

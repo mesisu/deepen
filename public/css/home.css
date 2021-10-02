@@ -1,0 +1,100 @@
+body{
+  background: #151515 url('../../storage/images/Deepen.png') no-repeat fixed center bottom;
+  background-size: cover;
+  text-align: right;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+
+
+
+.header1 {
+  z-index: 100;
+  padding-top: 15px;
+  position: fixed;
+  width: 1540px;
+  left: 35%;
+  margin-left: -470px;
+  vertical-align: text-bottom; }
+  .header1::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .header1 h1 {
+    float: left;
+    font-size: 22px;
+    font-size: 3.5rem;
+    margin-right: 50px; }
+    .pcHeader h1 span {
+      font-size: 12px;
+      font-size: 1.2rem;
+      padding-right: 7px; }
+  .header1 ul {
+    float: right;
+    padding-top: 0.5px; }
+    .pcHeader ul::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .header1 ul li {
+      float: left;
+      font-size: 15px;
+      font-size: 1.5rem;
+      margin-right: 25px; }
+      .header1 ul li a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+         }
+      .header1 ul li a::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        transition: transform .2s; }
+
+
+li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+}
+
+.btn-circle-fishy {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  transition: .4s;
+}
+
+.btn-circle-fishy:hover {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.header1{
+	  width:480px;
+	}
+}

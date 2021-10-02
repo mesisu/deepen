@@ -1,0 +1,42 @@
+.text-newsbody {
+    vertical-align:top; 
+    
+}
+
+.sample-box {
+    position: relative;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #2779bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+
+.news-position{
+    margin-bottom: 1rem;
+    
+}
+
+.news-from-group {
+display:inline-flex
+}
+
+.chkbox {
+        position: absolute;
+    top: -5px;
+    left: -10px;
+    
+}
