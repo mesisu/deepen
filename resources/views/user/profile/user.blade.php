@@ -10,7 +10,7 @@
                 <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
                 <h2>筆者プロフィール</h2>
                 <div>
-                    @if ($profile->profile_path == null)
+                    @if ($profile->profile_image == null)
                     <img src="{{ secure_asset('storage/image/noimage_m.jpg') }}" class="avatar" width="120" height="120">
                     @else
                     <img src="{{ secure_asset('storage/image/'.$profile->profile_image) }}" class="avatar" width="120" height="120">
